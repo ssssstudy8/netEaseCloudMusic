@@ -1,0 +1,18 @@
+/* 推荐歌曲 */
+.header {
+  margin: 20rpx 0rpx 4rpx 0;
+}
+
+.header .title {
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: rgb(50, 50, 50);
+}
+
+.header .more {
+  float: right;
+  border: 1rpx solid #333;
+  padding: 8rpx 18rpx;
+  font-size: 24rpx;
+  border-radius: 20rpx;
+}

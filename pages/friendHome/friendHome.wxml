@@ -1,0 +1,41 @@
+<view class="friendHomeContainer">
+  <!-- 背景 -->
+  <view class="backgroundImg">
+    <image src="{{friendInfo.profile.backgroundUrl}}" />
+  </view>
+  <!-- 个人信息 -->
+  <view class="infoContainer">
+    <view class="avatar">
+      <image src="{{friendInfo.profile.avatarUrl}}" />
+    </view>
+    <view class="userInfo">
+      <view class="userNameBox">{{friendInfo.profile.nickname}}</view>
+      <view class="info">
+        <text>{{friendInfo.profile.follows}}关注</text>
+        <text>{{friendInfo.profile.followeds}}粉丝</text>
+        <text>Lv.{{friendInfo.level}}</text>
+      </view>
+      <view class="infoBtn">
+        <button class="concern">
+          <text>互相关注</text>
+          <text class="time">{{friendInfo.profile.followTime}}</text>
+        </button>
+        <button class="talk" binttap="toTalk" data-userId="{{friendInfo.profile}}">聊天</button>
+      </view>
+    </view>
+  </view>
+  <view class="category">
+    <text>主页</text>
+    <text>动态</text>
+    <text>播客</text>
+  </view>
+  <view class="baseInfoContainer">
+    <text class="baseInfo">基本信息</text>
+    <view class="infoItem">
+      <text>性别：{{ friendInfo.profile.gender == 1 ? '男' : '女' }}</text>
+      <text>村龄：{{createDays}}年({{createTime}}注册)</text>
+      <text>生日：{{birthday}}</text>
+      <text>个人简介：{{friendInfo.profile.signature}}</text>
+    </view>
+  </view>
+</view>

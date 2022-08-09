@@ -1,0 +1,4 @@
+<view class="userMusicInfoItem">
+  <text class="title">{{userInfo}}</text>
+  <text class="more">></text>
+</view>
