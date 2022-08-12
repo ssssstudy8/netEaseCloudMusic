@@ -3,7 +3,13 @@
   <view class="header">
     <view class="search">
       <text class="iconfont icon-search1 searchIcon"></text>
-      <input value="{{searchContent}}" class="searchInput" placeholder="{{showKeyWord.showKeyword}}" placeholder-class="placeholder" bindinput="handleInput" />
+      <input 
+        value="{{searchContent}}" 
+        class="searchInput" 
+        placeholder="{{showKeyWord.showKeyword}}" 
+        placeholder-class="placeholder" 
+        bindinput="handleInput" 
+      />
       <text class="clear" bindtap="clearSearchContent" hidden="{{!searchContent}}">x</text>
     </view>
     <text class="cancel">取消</text>

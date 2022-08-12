@@ -1,4 +1,4 @@
-import request from '../../utils/request.js'
+import request from '../../utils/request'
 Page({
 
   /**
@@ -58,11 +58,25 @@ Page({
       recommendList: recommendListData.result
     })
   },
-  
+
   //跳转到每日推荐页面
   toRecommend() {
     wx.navigateTo({
-      url: '/pages/recommend/recommend'
+      url: '../../music/pages/recommend/recommend'
+    })
+  },
+
+  morePlayList() {
+    wx.navigateTo({
+      url: '/music/pages/playlist/playlist'
+    })
+  },
+
+  toMusic(event) {
+    // console.log(event)
+    let palyList = event.currentTarget.dataset
+    wx.navigateTo({
+      url: '/music/pages/music/music?palyListId=' + palyList.palylistid
     })
   },
 

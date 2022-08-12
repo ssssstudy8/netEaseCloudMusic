@@ -123,7 +123,7 @@ Page({
     //我的好友
     goFriend() {
         wx.navigateTo({
-            url: '/pages/friends/friends'
+            url: '/friend/pages/friends/friends'
         })
     },
 

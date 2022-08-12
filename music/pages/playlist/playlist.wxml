@@ -1,0 +1,8 @@
+<view class="playListContainer">
+  <scroll-view scroll-y="true" class="playList">
+    <view class="scrollItem" wx:for="{{playList}}" wx:key="id">
+      <image src="{{item.picUrl}}" />
+      <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+</view>

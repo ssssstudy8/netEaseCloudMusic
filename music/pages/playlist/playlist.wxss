@@ -1,0 +1,34 @@
+.playList {
+  display: flex;
+  padding: 30rpx;
+}
+
+.scrollItem {
+  width: 30%;
+  height: 300rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+
+.scrollItem image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.scrollItem text {
+  font-size: 26rpx;
+  /* 单行文本溢出用省略号代替 */
+  /* display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /* 多行文本溢出隐藏 省略号代替 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置对齐方式 */
+  -webkit-line-clamp: 2;
+}

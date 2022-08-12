@@ -32,10 +32,16 @@
   <!-- 推荐歌曲 -->
   <view class="recommendContainer">
     <!-- 头部区域 -->
-    <NavHeader title="推荐歌单"></NavHeader>
+    <NavHeader title="推荐歌单" bindtap="morePlayList"></NavHeader>
     <!-- 内容区 -->
-    <scroll-view class="recommed" enable-flex scroll-x>
-      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id">
+    <scroll-view class="recommed" enable-flex scroll-x >
+      <view 
+        class="scrollItem" 
+        wx:for="{{recommendList}}" 
+        wx:key="id" 
+        bindtap="toMusic" 
+        data-palyListId="{{item.id}}"
+      >
         <image src="{{item.picUrl}}" />
         <text>{{item.name}}</text>
       </view>

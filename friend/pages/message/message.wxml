@@ -1,0 +1,14 @@
+<view class="messageContainer">
+  <scroll-view class="chatList" scroll-y="true">
+    <view class="chatItem" wx:for="{{messageList}}" wx:if="result.newMsgs">
+      <image src="{{result.newMsgs[0].fromUser.avatarUrl}}" />
+      <text>{{item}}</text>
+    </view>
+  </scroll-view>
+  <view class="bottom">
+    <view class="messageBox">
+      <input placeholder="发送消息" value="{{message}}" class="message" bindinput="inputMessage" />
+      <text class="send" bindtap="toSend">发送</text>
+    </view>
+  </view>
+</view>

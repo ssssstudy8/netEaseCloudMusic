@@ -1,0 +1,25 @@
+<view class="friendsContainer">
+  <!-- 头部区域 -->
+  <view class="header">
+    <view class="category">按最常访问排序</view>
+    <view class="update">
+      <text class="weekUpdate">本周更新</text>
+      <text class="updateNumber">9人更新</text>
+    </view>
+  </view>
+  <view class="concernContainer">
+    <view 
+      class="concern" 
+      wx:for="{{friendsList}}" 
+      wx:key="userId" 
+      bindtap="friendInfo"
+      data-friendInfo="{{item}}"
+    >
+      <image src="{{item.avatarUrl}}" class="avatar" />
+      <view class="avatarContainer">
+        <image src="{{item.avatarDetail.identityIconUrl}}" class="vip" />
+        <text class="friendName">{{item.py}}</text>
+      </view>
+    </view>
+  </view>
+</view>

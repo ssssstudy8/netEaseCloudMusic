@@ -1,0 +1,75 @@
+.friendsContainer {
+  margin-top: 20rpx;
+}
+
+.friendsContainer .header {
+  font-size: 34rpx;
+  padding: 20rpx 30rpx 2rpx 30rpx;
+}
+.category{
+  font-size: 32rpx;
+  margin: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+.update {
+  display: flex;
+  height: 100rpx;
+  width: 96%;
+  margin: 10rpx auto;
+  border: 1rpx solid rgb(186, 186, 186);
+  align-items: center;
+  border-radius: 20rpx;
+  box-shadow: 1rpx #b2b2b2;
+}
+
+.update .weekUpdate {
+  position: relative;
+  left: 20rpx;
+  font-size: 30rpx;
+}
+
+.update .updateNumber {
+  position: absolute;
+  right: 80rpx;
+  font-size: 28rpx;
+}
+
+/* 歌手列表 */
+.concernContainer {
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+
+.concernContainer .concern {
+  display: flex;
+  height: 120rpx;
+  margin-bottom: 30rpx;
+}
+
+.concern .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.concern .vip {
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+  position: relative;
+  left: -55rpx;
+  top: 55rpx;
+}
+
+.concern .friendName {
+  margin-left: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 34rpx;
+}
+
+.avatarContainer{
+  width: 83%;
+  border-bottom: 1px solid #f5f4f4;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,37 @@
+<view class="musicContainer">
+  <!-- 歌单描述 -->
+  <view class="banner" style=" background-image: url({{playListDetail.coverImgUrl}})">
+    <view class="bannerList">
+      <view class="backgroundImg">
+        <image src="{{playListDetail.coverImgUrl}}" />
+      </view>
+      <view class="writing">
+        <view class="title">{{playListDetail.name}}</view>
+        <view class="creator">
+          <image src="{{playListDetail.creator.avatarUrl}}" />
+          <view class="name">{{playListDetail.creator.nickname}}</view>
+          <view class="concern">+关注</view>
+        </view>
+        <view class="discripe">{{playListDetail.description}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 播放 -->
+  <view class="songContainer">
+    <view class="playList">
+      <text class="allPlay">播放全部</text>
+      <text class="changeMore">多选</text>
+    </view>
+    <!-- 歌曲 -->
+    <scroll-view class="songList" scroll-y>
+      <view class="songItem" wx:for="{{musicList}}" wx:key="id" data-index="{{index}}" data-song="{{item}}" bindtap="toSongDetail">
+        <image src="{{item.al.picUrl}}" />
+        <view class="songInfo">
+          <text class="songName">{{item.name}}</text>
+          <text class="songAuthor">{{item.ar[0].name}}</text>
+        </view>
+        <text class="iconfont icon-gengduo"></text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

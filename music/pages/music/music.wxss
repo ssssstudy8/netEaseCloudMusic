@@ -1,0 +1,124 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.musicContainer {
+  height: 100%;
+}
+
+.banner {
+  height: 390rpx;
+ 
+}
+
+.bannerList {
+  display: flex;
+}
+
+.backgroundImg image {
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 30rpx;
+  margin: 70rpx 30rpx;
+}
+
+.writing {
+  padding: 70rpx 25rpx 70rpx 10rpx;
+}
+
+.writing .title {
+  font-size: 38rpx;
+}
+
+.creator {
+  display: flex;
+  padding-top: 20rpx;
+}
+
+.creator image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.creator .name {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+}
+.creator .concern{
+  padding-left: 20rpx;
+  margin: 15rpx;
+  background-color: rgb(240, 71, 71);
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100rpx;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+}
+
+.writing .discripe {
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  padding-top: 20rpx;
+}
+
+/* 播放 */
+.songContainer {
+  margin: 20rpx 30rpx;
+}
+
+.songContainer .playList {
+  margin-bottom: 5rpx;
+}
+
+.playList .allPlay {
+  font-size: 35rpx;
+}
+
+.playList .changeMore {
+  float: right;
+  margin-right: 30rpx;
+}
+
+.songList {
+  height: calc(100vh - 380rpx);
+}
+.songItem{
+  margin: 22rpx 0;
+  position: relative;
+  display: flex;
+}
+
+.songItem image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.songInfo {
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+.songInfo .songName{
+  font-size: 34rpx;
+}
+.songInfo .songAuthor{
+  font-size: 28rpx;
+  color: rgb(37, 37, 37);
+}
+.iconfont {
+  position: absolute;
+  right: 0;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+}
